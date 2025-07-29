@@ -1,5 +1,23 @@
 # Kubernetes Monitoring with Grafana Cloud
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Architecture Diagram](#architecture-diagram)
+- [Setting Up Grafana Cloud](#setting-up-grafana-cloud)
+  - [Create Access Policies](#create-access-policies)
+  - [Configure Terraform Provider](#configure-terraform-provider)
+  - [Create a Grafana Stack and Service Account](#create-a-grafana-stack-and-service-account)
+  - [Create Access Policy for Grafana Alloy](#create-access-policy-for-grafana-alloy)
+  - [Expose Connection Details](#expose-connection-details)
+- [Deploying the Monitoring Stack](#deploying-the-monitoring-stack)
+  - [Deploying with Terraform](#deploying-with-terraform)
+  - [What the k8s-monitoring Helm Chart Deploys](#what-the-k8s-monitoring-helm-chart-deploys)
+- [Understanding Grafana Alloy](#understanding-grafana-alloy)
+- [Customizing Your Monitoring Pipeline](#customizing-your-monitoring-pipeline)
+- [Managing Costs](#managing-costs)
+- [Resources](#resources)
+
 ## Introduction
 
 This guide walks you through building a scalable and centralized monitoring system for Kubernetes environments using a push-based model — all managed through Infrastructure as Code.
