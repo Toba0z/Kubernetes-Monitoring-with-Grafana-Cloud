@@ -360,8 +360,8 @@ resource "helm_release" "grafana_agent" {
   })]
 }
 
-```h
----
+```
+
 ## Why Use the `k8s-monitoring` Helm Chart?
 
 Manually writing and maintaining detailed telemetry configurations for Grafana Alloy can quickly become repetitive and error-prone — especially as your environment scales.
